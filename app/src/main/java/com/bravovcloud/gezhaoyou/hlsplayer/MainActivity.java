@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
         //读取设置视频地址
         hls_url_text = (EditText) findViewById(R.id.hls_stream_address);
         SharedPreferences get_data = getSharedPreferences("data",MODE_PRIVATE);
-        String hls_url = get_data.getString("hls_url","http://192.168.9.237/live/livestream.m3u8");
+        String hls_url = get_data.getString("hls_url","http://devimages.apple.com/iphone/samples/bipbop/gear1/prog_index.m3u8");
         hls_url_text.setText(hls_url);
         Log.i("hls_url",hls_url);
         //
